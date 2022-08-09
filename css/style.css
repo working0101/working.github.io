@@ -1,0 +1,109 @@
+/* common */
+
+html,body{
+  margin: 0;
+  line-height: none;
+  height: 100%;
+}
+
+h1{
+  font-weight: normal;
+  font-size: 24px;
+  margin: auto 0;
+  
+}
+
+
+/* header  */
+header> .bgpic{
+  background-image: url(./img/img_logo.png);
+  background-size: 75px;
+  width: 100%;
+  height: 43px ;
+} 
+
+/* SVGで生成したCSS */
+/* <style type="text/css"> */
+.svgSample1{
+  background: rgb(248, 239, 221);
+}
+.svgSample1 text {
+  font-weight       : bold;
+  font-size         : 40px;
+  font-family       : Meiryo UI;
+  stroke            : #f9798c;
+  fill              : #ffffff;
+  letter-spacing    : 6px;
+  text-anchor       : middle;
+}
+.svgSample1 > svg > use:nth-of-type(1) {
+  stroke-width      : 13px;
+  paint-order       : stroke;
+  stroke-linejoin   : round ;
+}
+.svgSample1 > svg > use:nth-of-type(2) {
+  stroke-width      : 0;
+}
+/* </style> */
+
+.container{
+  display: flex;
+  justify-content: space-around;
+  background: hsla(160, 80%, 50%, 30%);
+  color: cornflowerblue;
+  margin: 0 20%;
+}
+a {
+  align-items: center;
+  font-size: 20px;
+  text-decoration: none;
+  color:tomato;
+  
+}
+
+
+
+/* section */
+section{
+  margin-top: 36px;
+  text-align: center;
+}
+
+img{
+  outline: solid 5px black;
+  box-shadow:    10px 20px 20px #666666;
+  /* box-shadow:  3px 3px red, -1em 0 0.4em olive; */
+}
+
+
+.text{
+  font-size: 20px;
+  margin: 15px; auto;
+
+
+  /* outline: 1px solid red; */
+}
+/* small screen */
+img{
+  width: 95%;
+  margin: auto;
+}
+
+
+/* medium screen */
+@media (min-width:600) {
+  img{
+    width: 500px;
+  }
+  section{
+    display: flex;
+  }
+  
+}
+
+
+/* large screen */
+@media (min-width:800px) {
+ 
+}
+
