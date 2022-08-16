@@ -1,6 +1,7 @@
 /* common */
 
 html,body{
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   line-height: none;
   height: 100%;
@@ -37,29 +38,31 @@ header> .bgpic{
   font-weight       : 1px;
   font-size         : 40px;
   /* font-family       : Meiryo UI; */
-  font-family: Arial, Helvetica, sans-serif;
   stroke            : tomato  ;
   fill              : white;
-  letter-spacing    : 6px;
+  letter-spacing    : 10px;
   text-anchor       : middle;
 }
 
 .svgSample1 > svg > use:nth-of-type(1) {
-  stroke-width      : 13px;
+  stroke-width      : 5px;
   paint-order       : stroke;
   stroke-linejoin   : round ;
 }
 
 .svgSample1 > svg > use:nth-of-type(2) {
-  stroke-width      : 0;
+  stroke-width      : 0 ;
 }
 
 /* main */
 
-.btn{
+.container{
+  margin-bottom: 30px;
+}
+.container-shop {
   display: flex;
-  /* justify-content: space-around; */
-  outline:1px solid red;
+  justify-content: space-around;
+  /* outline:1px solid red; */
   margin: 0 auto;
 }
 li {
@@ -72,9 +75,13 @@ li {
   border-radius: 8px;
 }
 
-a {
-  color: hsl(240, 97%, 66%);
+.container-shop>li> a {
+  padding: 3px 6px ;
+  background: #45ea2b;
+  color: whitesmoke;
+  border-radius: 4px;
   text-decoration: none;
+  
 }
 
 a:hover {
@@ -88,25 +95,57 @@ a:hover {
   text-align: center;
   outline: 1px solid red;
 }
+
+section>p, .container>img{
+  width: 80vw;
+}
+
+
+
 p{
   margin: 0 auto;
-  margin-bottom: 30px;
-}
-section>p, .img-shop{
-  width: 90vw;
   outline: 1px solid blue ;
+}
+.sub-text{
+  margin: 0 ;
+  display: none;
+  margin-bottom: 30px;
 }
 
 /* small screen */
+@media (max-width: 599) {
+  
+}
 
 
 
 /* medium screen */
-/* @media (min-width: 600px) and (max-width: 800px) {
-} */
-
+@media (min-width: 600px) and (max-width: 799px) {
+}
 
 /* large screen */
-/* @media (min-width: 1000px) {
-} */
+@media (min-width: 800px) {
+  .container>img{
+    
+    width: 80vw;
+    height: fit-content;
+  }
+  .container{
+    margin: 16px 0 ;
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: auto 100px 100px ;
+    /* grid-template-rows:  1fr  ; */
+    /* grid-area: "pic"  ;  */
+    justify-content: space-around;
+  }
+  .sub-text{
+    /* margin: 0; */
+    display: block;
+    background: pink;
+    
+
+  }
+  
+}
 
