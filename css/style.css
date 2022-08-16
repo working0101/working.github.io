@@ -83,23 +83,30 @@ a:hover {
 }
 
 /* section */
-.pic>img {
-  width: 300px;
-  height: fit-content;
+.hero{
+  padding: 16px 0;
+  text-align: center;
+  outline: 1px solid red;
 }
-
+p{
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+section>p, .img-shop{
+  width: 90vw;
+  outline: 1px solid blue ;
+}
 
 /* small screen */
 
 
 
 /* medium screen */
-@media (min-width: 600px) and (max-width: 800px) {
-}
+/* @media (min-width: 600px) and (max-width: 800px) {
+} */
 
 
 /* large screen */
-@media (min-width: 1000px) {
- 
-}
+/* @media (min-width: 1000px) {
+} */
 
