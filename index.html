@@ -8,6 +8,7 @@
   <link rel="shortcut icon" href="img/img_logo.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/carouselStyle.css">
 </head>
 <body>
   <header>
@@ -26,50 +27,74 @@
     <!-- （注）IE対策のため「text(use)」を2回繰り返しています -->
     
     <div class="bgpic"></div>
+
+    
   </header>
   
-  <main>
+<main>
+  <section class="carousel">
+    <div class="carouselContainer">
+      <ul id="carouselUl">
+        <li id="picture"><img src="img/pic1.png" alt=""></li>
+        <li><img src="img/pic2.png" alt=""></li>
+        <li><img src="img/pic3.png" alt=""></li>
+        <li><img src="img/pic4.png" alt=""></li>
+      </ul>
+      
+      <button id="prev">&laquo;</button>
+      <button id="next">&raquo;</button>
+    </div>
+  
+    <nav></nav>
+  </section>
+
+  <section>
     <ul>
       <div class="container-shop">
         <legend>他店舗資料</legend>
         <li>
           <!-- " target="_blankで新しいタブで開く -->
           <a href="https://working0101.github.io/toda/"
-             target="_blank">戸田店</a>
+          target="_blank">戸田店</a>
         </li>
         <li>
-          <a href="https://working0101.github.io//"
-             target="_blank">Sample店</a>
+          <a href="https://working0101.github.io/nerima/"
+          target="_blank">練馬大泉店</a>
         </li>
-    </div>
-  </ul>
-</main>
-<section class="hero">
-  <div class="container">
-    <img src="img/pic1.JPG" alt="岩槻店パブリック" class="img-shop1">
+      </div>
+    </ul>
+  </section>
+  
+  <section class="hero">
+    <div class="container">
+      <img src="img/pic1.JPG" alt="岩槻店パブリック" class="img-shop1">
     <p>岩槻店のパブリックスペース。
       <br>お盆期間中で西瓜の玉売りが
       <br>約80個程度売れます。</p>
     <p class="sub-text">幸水梨の大袋は小粒（44玉以下サイズ）2㎏入</p>
-  </div> 
-  <div class="container">
+    </div> 
+    <div class="container">
     <img src="img/pic2.JPG" alt="岩槻店パブリック" class="img-shop2">
     <p>岩槻店のパブリックスペース　エンド。
       <br>幸水2P-24玉<br>幸水3P-28玉<br>黒小玉4玉サイズ</p>
-  </div>
-  <div class="container">
+    </div>
+    <div class="container">
     <img src="img/pic3.JPG" alt="岩槻店パブリック" class="img-shop3">
     <p>岩槻店のパブリックスペース。
       <br>お供えセット<br>幸水<br>オレンジ<br>グレープフルーツ<br>りんご<br>デラウェア</p>
-  </div>
-  <div class="container">
-    <img src="img/pic5.JPG" alt="岩槻店パブリック" class="img-shop3">
-    <p>岩槻店の店頭1番台。
-      <br>もも18玉3P <br>もも15玉2P </p>
-  </div>
-
-  </section>
+    </div>
+    <div class="container">
+      <img src="img/pic5.JPG" alt="岩槻店パブリック" class="img-shop3">
+      <p>岩槻店の店頭1番台。
+        <br>もも18玉3P <br>もも15玉2P </p>
+      </div>
+      
+    </section>
+  </main>
+  
   <footer>(C)Hagiwara</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>
 
