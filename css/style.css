@@ -9,12 +9,11 @@ body  {
   background:linear-gradient( -40deg, #e1150a48,#edf69d86,#04e0f880);
   margin: 0 100px ;
   padding: 8px 0;
-
 }
 
 
 main  {
-  width: 330px;
+  width: 350px;
   margin: 32px auto   ;
   border-radius: 8px;
 }
@@ -233,13 +232,6 @@ td {
   object-fit: cover;
 }
 
-@media (max-width : 340px ) {
-  main  {
-    width: 280px;
-    margin: 32px auto   ;
-    border-radius: 8px;
-  }
-}
 
 
 
@@ -253,8 +245,26 @@ td {
   th {
     font-size: 14px;
   }
-
+  
   td {
     font-size: 12px;
   }
 }
+    @media (max-width : 399px ) {
+      main  {
+        width: 280px;
+        margin: 24px auto   ;
+        border-radius: 8px;
+      }
+    }
+    
+    @media (max-width : 330px ) {
+      main  {
+        width: 200px;
+        margin: 16px auto   ;
+        border-radius: 4px;
+      }
+      h1{
+        font-size: 20px;
+      }
+    }
